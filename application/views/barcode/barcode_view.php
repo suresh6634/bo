@@ -24,16 +24,15 @@
                             <div class="x_panel">
                                 <div class="x_content">
                                     <!-- img alt="TESTING" src="<?php echo $base_url."barcode/code39"; ?>" / -->
-                                    <? if(validation_errors()) { ?>
+                                    <?php if(validation_errors()) { ?>
                                     <div class="alert alert-danger" role="alert">
                                         <?php
-                                        /*
+
                                             if($debug == 1) {
                                                 echo "<pre>";
                                                     print_r($formatted_date);
                                                 echo "</pre>";
                                             }
-                                        */
                                         echo validation_errors();
                                         ?>
                                     </div>
@@ -88,41 +87,49 @@
                                                         PECKO ELECTRONICS INDUSTRIES PTE. LTD.
                                                     </h3>
                                                 </div>
-                                                <div class="col-md-3 col-sm-9 col-xs-3" style="margin:5px 0;font-weight:800;">
-                                                    DESCRIPTION:
-                                                </div>
-                                                <div class="col-md-9 col-sm-9 col-xs-9" style="margin:5px 0;padding: 0 0 0 15px;">
-                                                    <?php echo $description; ?>
-                                                </div>
 
-                                                <div class="col-md-3 col-sm-9 col-xs-3" style="padding:15px 0 0 10px;font-weight:800;">
-                                                    PART NO.:
+                                               <!--  Add a new div to the outside-->
+                                                <div class="col-md-5 col-sm-5 col-xs-12" style="display: inline-block">
+                                                    <div  style="margin:5px 0;font-weight:800;">
+                                                        DESCRIPTION:
+                                                    </div>
+                                                    <div  style="margin:5px 0;padding: 0 0 0 15px;">
+                                                        <?php echo $description; ?>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-9 col-sm-9 col-xs-9" style="margin:5px 0;">
-                                                    <img alt="Part Number" src="<?php echo $base_url."barcode/code39/".$part_no; ?>" />
+                                                <div class="col-md-5 col-sm-5 col-xs-12" style="display: inline-block">
+                                                    <div  style="padding:15px 0 0 10px;font-weight:800;">
+                                                        PART NO.:
+                                                    </div>
+                                                    <div style="margin:5px 0;">
+                                                        <img alt="Part Number" src="<?php echo $base_url."barcode/code39/".$part_no; ?>" />
+                                                    </div>
                                                 </div>
-
-                                                <div class="col-md-3 col-sm-9 col-xs-3" style="padding:15px 0 0 10px;font-weight:800;">
-                                                    P/O No.:
+                                                <div class="col-md-5 col-sm-5 col-xs-12" style="display: inline-block">
+                                                    <div style="padding:15px 0 0 10px;font-weight:800;">
+                                                        P/O No.:
+                                                    </div>
+                                                    <div style="margin:5px 0;">
+                                                        <img alt="P/O Number" src="<?php echo $base_url."barcode/code39/".$po_no; ?>" />
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-9 col-sm-9 col-xs-9" style="margin:5px 0;">
-                                                    <img alt="P/O Number" src="<?php echo $base_url."barcode/code39/".$po_no; ?>" />
+                                                <div class="col-md-5 col-sm-5 col-xs-12" style="display: inline-block">
+                                                    <div style="padding:15px 0 0 10px;font-weight:800;">
+                                                        D/O No.:
+                                                    </div>
+                                                    <div style="margin:5px 0;">
+                                                        <img alt="D/O Number" src="<?php echo $base_url."barcode/code39/".$do_no; ?>" />
+                                                    </div>
                                                 </div>
-
-                                                <div class="col-md-3 col-sm-9 col-xs-3" style="padding:15px 0 0 10px;font-weight:800;">
-                                                    D/O No.:
-                                                </div>
-                                                <div class="col-md-9 col-sm-9 col-xs-9" style="margin:5px 0;">
-                                                    <img alt="D/O Number" src="<?php echo $base_url."barcode/code39/".$do_no; ?>" />
-                                                </div>
-
-                                                <div class="col-md-3 col-sm-9 col-xs-3" style="padding:15px 0 0 10px;font-weight:800;">
-                                                    QTY:
-                                                </div>
-                                                <div class="col-md-9 col-sm-9 col-xs-9" style="margin:5px 0;">
+                                                <div class="col-md-5 col-sm-5 col-xs-12" style="display: inline-block">
+                                                    <div  style="padding:15px 0 0 10px;font-weight:800;">
+                                                        QTY:
+                                                    </div>
+                                                    <div  style="margin:5px 0;">
                                                     <img alt="Quantity" src="<?php echo $base_url."barcode/code39/".$qty; ?>" />
-                                                </div>
+                                                    </div>
 
+                                                </div>
                                             </div>
 
 

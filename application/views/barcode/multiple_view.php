@@ -89,12 +89,12 @@
 
                                         foreach ($barcode_data as $key => $data)
                                         {
-
-                                ?>
-                                            <div class="col-md-3 col-sm-3 col-xs-3" style="margin:5px 0;font-weight:800;">
+                                            /* Add a new div to the outside*/
+                                ?>      <div class="col-md-5 col-sm-5 col-xs-12" style="display: inline-block">
+                                            <div style="margin:5px 0;font-weight:800;">
                                                 <?php echo $label[$key]; ?>
                                             </div>
-                                            <div class="col-md-9 col-sm-9 col-xs-9" style="margin:5px 0;padding: 0 0 0 15px;">
+                                            <div style="margin:5px 0;padding: 0 0 0 15px;">
                                                 <img alt="Quantity" src="<?php echo $base_url."barcode/code39/".$data; ?>" />
 
                                                 <?php
@@ -107,6 +107,7 @@
 /*                                                    }
                                                 */?>
                                             </div>
+                                        </div>
                                 <?php
                                          }
                                 ?>

@@ -31,7 +31,9 @@
                                             echo "</pre>";
 
                                         }
+
                                         $label = array("DESCRIPTION:", "PART No.:", "P/O No.:", "D/O No.:", "QUANTITY:");
+
                                         if($error) { ?>
                                             <div class="alert alert-danger" role="alert">
                                                 <?php
@@ -87,26 +89,29 @@
                                                         </h3>
                                                     </div>
                                         <?php
-
                                                 foreach ($barcode_data as $key => $data)
                                                 {
-
-                                        ?>
-                                                    <div class="col-md-2 col-sm-2 col-xs-12" style="margin:5px 0;font-weight:800;">
+                                             /* Add a new div to the outside*/
+                                        ?>     <div class="col-md-5 col-sm-5 col-xs-12" style="display: inline-block">
+                                                    <div style="margin:5px 0;font-weight:800;">
+                                                   <!-- <div class="col-md-2 col-sm-2 col-xs-12" style="margin:5px 0;font-weight:800;">-->
                                                         <?php echo $label[$key]; ?>
                                                     </div>
-                                                    <div class="col-md-10 col-sm-10 col-xs-12" style="margin:5px 0;padding: 0 0 0 15px;">
+
+                                                    <div style="margin:5px 0;padding: 0 0 0 15px;">
+                                                   <!-- <div class="col-md-10 col-sm-10 col-xs-12" style="margin:5px 0;padding: 0 0 0 15px;">-->
 
                                                         <?php
                                                             if($key == 0) {
                                                                 echo $data;
                                                             }  else {
                                                         ?>
-                                                                <img alt="Quantity" src="<?php echo $base_url."barcode/code39/".$data; ?>" />
+                                                            <img alt="Quantity" src="<?php echo $base_url."barcode/code39/".$data; ?>" />
                                                         <?php
                                                             }
                                                         ?>
                                                     </div>
+                                                </div>
                                         <?php
                                                  }
                                         ?>
