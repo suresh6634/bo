@@ -97,6 +97,7 @@
                                                         <?php echo $description; ?>
                                                     </div>
                                                 </div>
+                                                <!--  Add a new div to the outside-->
                                                 <div class="col-md-5 col-sm-5 col-xs-12" style="display: inline-block">
                                                     <div  style="padding:15px 0 0 10px;font-weight:800;">
                                                         PART NO.:
@@ -105,6 +106,7 @@
                                                         <img alt="Part Number" src="<?php echo $base_url."barcode/code39/".$part_no; ?>" />
                                                     </div>
                                                 </div>
+                                                <!--  Add a new div to the outside-->
                                                 <div class="col-md-5 col-sm-5 col-xs-12" style="display: inline-block">
                                                     <div style="padding:15px 0 0 10px;font-weight:800;">
                                                         P/O No.:
@@ -113,6 +115,7 @@
                                                         <img alt="P/O Number" src="<?php echo $base_url."barcode/code39/".$po_no; ?>" />
                                                     </div>
                                                 </div>
+                                                <!--  Add a new div to the outside-->
                                                 <div class="col-md-5 col-sm-5 col-xs-12" style="display: inline-block">
                                                     <div style="padding:15px 0 0 10px;font-weight:800;">
                                                         D/O No.:
@@ -121,6 +124,7 @@
                                                         <img alt="D/O Number" src="<?php echo $base_url."barcode/code39/".$do_no; ?>" />
                                                     </div>
                                                 </div>
+                                                <!--  Add a new div to the outside-->
                                                 <div class="col-md-5 col-sm-5 col-xs-12" style="display: inline-block">
                                                     <div  style="padding:15px 0 0 10px;font-weight:800;">
                                                         QTY:
