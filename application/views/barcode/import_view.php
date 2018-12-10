@@ -83,8 +83,8 @@
                                         ?>
                                                 <div style="display:block;background:#FFF;float:left;width:100%;border:1px solid black;height:374px;margin: 0 0 10px 0;">
                                                     <div class="row" style="margin: 10px;">
-                                                    <div class="col-md-12 col-sm-12 col-xs-12">
-                                                        <h3 style="font-size:18px;text-decoration:underline;color: black;font-weight:800;">
+                                                    <div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1">
+                                                        <h3 style="font-size:18px;text-decoration:underline;color: black;font-weight:800;margin-left: 10px;">
                                                             PECKO ELECTRONICS INDUSTRIES PTE. LTD.
                                                         </h3>
                                                     </div>
@@ -93,19 +93,19 @@
                                                 {
 
                                              /* Add a new div to the outside*/
-                                        ?>     <div class="col-md-5 col-sm-5 col-xs-12" style="display: inline-block">
-                                                    <div style="margin:5px 0;font-weight:800;">
+                                        ?>     <div class="col-md-5 col-sm-5 col-xs-12 col-md-offset-1" style="display: inline-block">
+                                                    <div style="padding:10px 0 0 10px;font-weight:800;">
                                                    <!-- <div class="col-md-2 col-sm-2 col-xs-12" style="margin:5px 0;font-weight:800;">-->
-                                                        <?php echo $label[$key]; ?>
+                                                        <?php echo $label[$key];?>
                                                     </div>
-                                                    <div style="margin:5px 0;padding: 0 0 0 15px;">
+                                                    <div style="margin:5px 0;padding: 0 0px 0 10px;" class="import_view_one">
                                                    <!-- <div class="col-md-10 col-sm-10 col-xs-12" style="margin:5px 0;padding: 0 0 0 15px;">-->
                                                         <?php
                                                             if($key == 0) {
                                                                 echo $data;
                                                             }  else {
                                                         ?>
-                                                            <img alt="Quantity" src="<?php echo $base_url."barcode/code39/".$data; ?>" />
+                                                            <img alt="Quantity" src="<?php echo $base_url."barcode/code39/".$data; ?>" style="margin-left: -7px;" />
                                                         <?php
                                                             }
                                                         ?>
