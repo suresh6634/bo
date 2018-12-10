@@ -32,7 +32,7 @@
 
                                         }
 
-                                        $label = array("DESCRIPTION:", "PART No.:", "P/O No.:", "D/O No.:", "QUANTITY:");
+                                        $label = array("Cust. Order No.:", "D.O. No.:", "Pecko Part No.:", "Cust Part No.:", "QUANTITY:");
 
                                         if($error) { ?>
                                             <div class="alert alert-danger" role="alert">
@@ -100,15 +100,20 @@
                                                     </div>
                                                     <div style="margin:5px 0;padding: 0 0px 0 10px;" class="import_view_one">
                                                    <!-- <div class="col-md-10 col-sm-10 col-xs-12" style="margin:5px 0;padding: 0 0 0 15px;">-->
+                                                        <img alt="Quantity" src="<?php echo $base_url."barcode/code39/".$data; ?>" style="margin-left: -8px;" />
+
+                                                       <!-- reference multiple_view.php-->
                                                         <?php
-                                                            if($key == 0) {
+/*                                                            if($key == 0) {
                                                                 echo $data;
                                                             }  else {
-                                                        ?>
-                                                            <img alt="Quantity" src="<?php echo $base_url."barcode/code39/".$data; ?>" style="margin-left: -7px;" />
-                                                        <?php
-                                                            }
-                                                        ?>
+                                                        */?><!--
+                                                            <img alt="Quantity" src="<?php /*echo $base_url."barcode/code39/".$data; */?>" style="margin-left: -8px;" />
+                                                        --><?php
+/*                                                            }
+                                                        */?>
+
+
                                                     </div>
                                                 </div>
                                         <?php
