@@ -80,56 +80,56 @@
                         ?>
                                 <div class="col-md-8 col-sm-8 col-xs-12">
 
-                                        <div style="display:block;background:#FFF;float:left;width:100%;border:1px solid black;height:374px;">
-                                            <div class="row" style="margin: 10px;">
+                                        <div class="barcode_view_div_root">
+                                            <div class="row barcode_view_div" >
                                                 <div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1">
-                                                    <h3 style="font-size:18px;text-decoration:underline;color: black;font-weight:800;margin-left: 10px;">
+                                                    <h3>
                                                         PECKO ELECTRONICS INDUSTRIES PTE. LTD.
                                                     </h3>
                                                 </div>
 
                                                <!--  Add a new div to the outside-->
-                                                <div class="col-md-5 col-sm-5 col-xs-12 col-md-offset-1" style="display: inline-block">
-                                                    <div  style="padding:10px 0 0 10px;font-weight:800;">
+                                                <div class="col-md-5 col-sm-5 col-xs-12 col-md-offset-1 barcode_view_div_div2" >
+                                                    <div class="desc">
                                                         DESCRIPTION:
                                                     </div>
-                                                    <div  style="margin:5px 0;padding: 0 0 0 12px;">
+                                                    <div class="desc_val">
                                                         <?php echo $description; ?>
                                                     </div>
                                                 </div>
                                                 <!--  Add a new div to the outside-->
-                                                <div class="col-md-5 col-sm-5 col-xs-12 col-md-offset-1" style="display: inline-block">
-                                                    <div  style="padding:10px 0 0 10px;font-weight:800;">
+                                                <div class="col-md-5 col-sm-5 col-xs-12 col-md-offset-1 common" >
+                                                    <div class="common1">
                                                         PART NO.:
                                                     </div>
-                                                    <div style="margin:5px 0;">
+                                                    <div class="common2">
                                                         <img alt="Part Number" src="<?php echo $base_url."barcode/code39/".$part_no; ?>" />
                                                     </div>
                                                 </div>
                                                 <!--  Add a new div to the outside-->
-                                                <div class="col-md-5 col-sm-5 col-xs-12 col-md-offset-1" style="display: inline-block">
-                                                    <div style="padding:10px 0 0 10px;font-weight:800;">
+                                                <div class="col-md-5 col-sm-5 col-xs-12 col-md-offset-1 common" >
+                                                    <div class="common1">
                                                         P/O No.:
                                                     </div>
-                                                    <div style="margin:5px 0;">
+                                                    <div class="common2">
                                                         <img alt="P/O Number" src="<?php echo $base_url."barcode/code39/".$po_no; ?>" />
                                                     </div>
                                                 </div>
                                                 <!--  Add a new div to the outside-->
-                                                <div class="col-md-5 col-sm-5 col-xs-12 col-md-offset-1" style="display: inline-block">
-                                                    <div style="padding:10px 0 0 10px;font-weight:800;">
+                                                <div class="col-md-5 col-sm-5 col-xs-12 col-md-offset-1 common" >
+                                                    <div class="common1">
                                                         D/O No.:
                                                     </div>
-                                                    <div style="margin:5px 0;">
+                                                    <div class="common2">
                                                         <img alt="D/O Number" src="<?php echo $base_url."barcode/code39/".$do_no; ?>" />
                                                     </div>
                                                 </div>
                                                 <!--  Add a new div to the outside-->
-                                                <div class="col-md-5 col-sm-5 col-xs-12 col-md-offset-1" style="display: inline-block">
-                                                    <div  style="padding:10px 0 0 10px;font-weight:800;">
+                                                <div class="col-md-5 col-sm-5 col-xs-12 col-md-offset-1 common">
+                                                    <div class="common1">
                                                         QTY:
                                                     </div>
-                                                    <div  style="margin:5px 0;">
+                                                    <div class="common2">
                                                     <img alt="Quantity" src="<?php echo $base_url."barcode/code39/".$qty; ?>" />
                                                     </div>
 

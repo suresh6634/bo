@@ -78,10 +78,10 @@
                                         $barcode_data = explode(",", $line);
 
                                 ?>
-                                        <div style="display:block;background:#FFF;float:left;width:100%;border:1px solid black;height:424px;margin: 0 0 10px 0;">
-                                            <div class="row" style="margin: 10px;">
-                                            <div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1">
-                                                <h3 style="font-size:18px;text-decoration:underline;color: black;font-weight:800;margin-left: 17px">
+                                        <div class="multiple_view_div">
+                                            <div class="row multiple_view_div_child1">
+                                            <div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1 multiple_view_div_child2">
+                                                <h3>
                                                     PECKO ELECTRONICS INDUSTRIES PTE. LTD.
                                                 </h3>
                                             </div>
@@ -90,11 +90,11 @@
                                         foreach ($barcode_data as $key => $data)
                                         {
                                       /* Add a new div to the outside*/
-                                ?>      <div class="col-md-5 col-sm-5 col-xs-12 col-md-offset-1" style="display: inline-block">
-                                            <div style="padding:10px 0 0 18px;font-weight:800;">
+                                ?>      <div class="col-md-5 col-sm-5 col-xs-12 col-md-offset-1 multiple_view_div_div1" >
+                                            <div class="multiple_view_key">
                                                 <?php echo $label[$key]; ?>
                                             </div>
-                                            <div style="margin:5px 0;padding: 0 0 0 10px;">
+                                            <div class="multiple_view_barcode">
                                                 <img alt="Quantity" src="<?php echo $base_url."barcode/code39/".$data; ?>" />
 
                                                 <?php
