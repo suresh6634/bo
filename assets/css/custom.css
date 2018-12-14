@@ -4253,3 +4253,110 @@ table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
 .required {
     color: red;
 }
+
+
+/*
+    Inline style modified to outline style
+    include modified barcode_view.php、modified import_view.php、modified multiple_view.php
+*/
+/*  1、modified barcode_view.php   */
+.barcode_view_div_root{
+    display:block;
+    background:#FFF;
+    float:left;
+    width:100%;
+    border:1px solid black;
+    height:500px;
+}
+.barcode_view_div{
+    margin: 10px;
+}
+.barcode_view_div:nth-child(1) h3{
+    font-size:18px;
+    text-decoration:underline;
+    color: black;
+    font-weight:800;
+    margin-left: 10px;
+}
+.barcode_view_div:nth-child(2),barcode_view_div:nth-child(3),barcode_view_div:nth-child(4),barcode_view_div:nth-child(5),barcode_view_div:nth-child(6){
+    display: inline-block;
+}
+.barcode_view_div .barcode_view_div_div2 .desc{
+    padding:10px 0 0 10px;
+    font-weight:800;
+}
+.barcode_view_div .barcode_view_div_div2 .desc_val{
+    margin:5px 0;
+    padding: 0 0 0 10px;
+    word-wrap:break-word
+}
+.barcode_view_div .common .common1{
+    padding:10px 0 0 10px;
+    font-weight:800;
+}
+.barcode_view_div .common .common2{
+    margin:5px 0;
+}
+/*  1、modified barcode_view.php   */
+
+/*  2、modified multiple_view.php   */
+.multiple_view_div{
+    display:block;
+    background:#FFF;
+    float:left;
+    width:100%;
+    border:1px solid black;
+    height:550px;
+    margin: 0 0 10px 0;
+}
+.multiple_view_div .multiple_view_div_child1{
+    margin: 10px;
+}
+.multiple_view_div .multiple_view_div_child2>h3{
+    font-size:18px;
+    text-decoration:underline;
+    color: black;
+    font-weight:800;
+    margin-left: 17px;
+}
+.multiple_view_div .multiple_view_div_div1{
+    display: inline-block;
+}
+.multiple_view_div .multiple_view_div_div1 .multiple_view_key{
+    padding:10px 0 0 18px;font-weight:800;
+}
+.multiple_view_div .multiple_view_div_div1 .multiple_view_barcode{
+    margin:5px 0;padding: 0 0 0 10px;
+}
+/*  2、modified multiple_view.php   */
+
+/*  3、modified import_view.php   */
+.import_view_root{
+    display:block;
+    background:#FFF;
+    float:left;
+    width:100%;
+    border:1px solid black;
+    height:550px;
+    margin: 0 0 10px 0;
+}
+.import_view_root .import_view_root_child1{
+    margin: 10px;
+}
+.import_view_root .import_view_root_child2>h3{
+    font-size:18px;
+    text-decoration:underline;
+    color: black;
+    font-weight:800;
+    margin-left: 10px;
+}
+.import_view_root .barcode_root{
+    display: inline-block
+}
+.import_view_root .import_view_key{
+    padding:10px 0 0 10px;font-weight:800;
+}
+.import_view_root .import_view_barcode{
+    margin:5px 0;padding: 0 0px 0 10px;
+}
+/*  3、modified import_view.php   */
